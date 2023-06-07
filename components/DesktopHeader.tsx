@@ -17,8 +17,7 @@ export default function DesktopHeader() {
             </div>
             <div className='relative font-medium text-lg justify-between text-primary-dark'>
                 <Link className='opacity-40 hover:opacity-100 focus:opacity-100 duration-500 mr-5' href="/projects">projecten</Link>
-                <Link className='opacity-40 hover:opacity-100 focus:opacity-100 duration-500 mr-5' href="/about">over</Link>
-                <Link className='opacity-40 hover:opacity-100 focus:opacity-100 duration-500 mr-5' href="/experience">ervaring</Link>
+                <Link className='opacity-40 hover:opacity-100 focus:opacity-100 duration-500 mr-5' href="/about">over Styl</Link>
                 <Link className='opacity-40 hover:opacity-100 focus:opacity-100 duration-500' href="/contact">contact</Link>
             </div>
         </div>

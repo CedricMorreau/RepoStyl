@@ -94,24 +94,10 @@ export default function MobileHeader() {
 
               <Link href="/about">
                 <li className='inline-flex flex-col mb-8'>
-                  <span className='flex'>Over</span>
+                  <span className='flex'>Over Styl</span>
                   <motion.div
                     initial={{ width: 0 }}
                     transition={{ delay: 0.8, duration: 1 }}
-                    whileInView={{ width: "100%" }}
-                    className="inline"
-                  >
-                    <div className='border-b-4 pt-1' />
-                  </motion.div>
-                </li>
-              </Link>
-
-              <Link href="/experience">
-                <li className='inline-flex flex-col mb-8'>
-                  <span className='flex'>Ervaring</span>
-                  <motion.div
-                    initial={{ width: 0 }}
-                    transition={{ delay: 1, duration: 1 }}
                     whileInView={{ width: "100%" }}
                     className="inline"
                   >
@@ -125,7 +111,7 @@ export default function MobileHeader() {
                   <span className='flex'>Contact</span>
                   <motion.div
                     initial={{ width: 0 }}
-                    transition={{ delay: 1.2, duration: 1 }}
+                    transition={{ delay: 1, duration: 1 }}
                     whileInView={{ width: "100%" }}
                     className="inline"
                   >
