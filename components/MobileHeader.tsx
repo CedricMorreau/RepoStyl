@@ -106,6 +106,7 @@ export default function MobileHeader() {
                 </li>
               </Link>
 
+
               <Link href="/contact">
                 <li className='inline-flex flex-col mb-8'>
                   <span className='flex'>Contact</span>

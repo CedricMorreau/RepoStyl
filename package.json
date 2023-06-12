@@ -24,6 +24,7 @@
     "next-sanity": "4",
     "postcss": "8.4.24",
     "react": "18.2.0",
+    "react-countup": "^6.4.2",
     "react-dom": "18.2.0",
     "react-simple-typewriter": "^5.0.1",
     "react-social-icons": "^5.15.0",
