@@ -1,7 +1,7 @@
 import { type SchemaTypeDefinition } from 'sanity'
 import home from "./schemas/home"
-import projectOverview from "./schemas/projectOverview"
+import projects from "./schemas/projects"
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [home, projectOverview],
+  types: [home, projects],
 }

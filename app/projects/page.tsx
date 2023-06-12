@@ -1,22 +1,20 @@
-"use client"
-
 import { client } from "@/sanity/lib/client"
 
 import DesktopHeader from "@/components/DesktopHeader"
 import MobileHeader from "@/components/MobileHeader"
 import ProjectCard from "@/components/ProjectCard"
-
-import { Typewriter } from 'react-simple-typewriter'
+import Writer from "@/components/Typewriter"
 
 type Projects = {
     _id: string;
     cardImage: any;
     title: string;
+    slug: string;
     tech: string;
 }
 
 export default async function projectOverview() {
-    const data: Projects[] = await client.fetch("*[_type =='projectOverview'][]",
+    const data: Projects[] = await client.fetch("*[_type =='projects'][]",
         {
             next: {
                 revalidate: 60
@@ -50,11 +48,7 @@ export default async function projectOverview() {
                 <MobileHeader />
                 <DesktopHeader />
 
-                <div className="pt-20">
-                    <div className="text-6xl font-medium leading-[3rem] text-primary-dark md:text-[6rem] pb-4">
-                        <Typewriter words={['Projecten']} loop={1} typeSpeed={85} />
-                    </div>
-                </div>
+                <Writer title={"Projecten"} />
 
 
                 <div className='w-full mt-16 pb-2 md:grid md:grid-cols-2 md:gap-10 max-w-5xl m-auto'>
@@ -62,6 +56,7 @@ export default async function projectOverview() {
                         return (<ProjectCard
                             key={project._id}
                             title={project.title}
+                            slug={project.slug}
                             tech={project.tech}
                             image={project.cardImage}
                         />
