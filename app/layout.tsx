@@ -18,11 +18,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html className='bg-primary-light' lang="en">
       <body className={montserrat.className}>
-        <main className='bg-primary-light'>
           {children}
-        </main>
       </body>
     </html>
   )

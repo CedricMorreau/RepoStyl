@@ -11,6 +11,7 @@ import Button from "@/components/Button"
 
 import { Typewriter } from 'react-simple-typewriter'
 import { SocialIcon } from 'react-social-icons'
+import Link from "next/link"
 
 type Home = {
   slug: string;
@@ -71,7 +72,9 @@ export default async function Home() {
 
           {/* Mobile button */}
           <div className="absolute top-[61%] left-[12%] sm:block md:hidden">
-            <Button />
+            <Link href="#">
+              <Button buttonText="More"/>
+            </Link>
           </div>
         </div>
 
