@@ -45,7 +45,7 @@ export default async function Home() {
         <div className="absolute bottom-0 left-0 h-96 w-96 -translate-x-2/4 translate-y-2/4 rounded-full  bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#A1FF0A]/25 blur-lg" />
       </div>
 
-      <div className="m-auto h-screen w-9/12 md:w-10/12 md:pt-4">
+      <div className="m-auto h-screen w-9/12 md:w-10/12 md:pt-4 lg:pt-0">
         <MobileHeader />
         <DesktopHeader />
 

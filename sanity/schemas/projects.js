@@ -63,13 +63,18 @@ export default defineType({
       type: 'text'
     },
     {
+      name: 'githubLink',
+      title: 'Github Link',
+      type: 'string'
+    },
+    {
       name: 'coffee',
-      title: 'cups of coffee',
+      title: 'Cups of coffee',
       type: 'number'
     },
     {
       name: 'workHours',
-      title: 'hours of work',
+      title: 'Hours of work',
       type: 'number'
     }
   ],

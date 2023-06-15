@@ -23,7 +23,7 @@ export default function Contact() {
                 <div className="absolute top-5 right-0 h-96 w-96 translate-x-3/4 lg:translate-x-2/4  translate-y-1/5 lg:translate-y-1/6 rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#C3FB4C]/30 blur-2xl" />
             </div>
 
-            <div className="relative w-9/12 m-auto">
+            <div className="m-auto w-9/12 md:w-10/12 md:pt-4 lg:pt-0">
                 <MobileHeader />
                 <DesktopHeader />
 

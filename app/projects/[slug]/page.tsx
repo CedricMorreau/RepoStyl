@@ -9,6 +9,7 @@ import { urlForImage } from "@/sanity/lib/image"
 import DesktopHeader from "@/components/DesktopHeader";
 import MobileHeader from "@/components/MobileHeader";
 
+import { SocialIcon } from 'react-social-icons'
 import { motion } from "framer-motion";
 import CountUp from 'react-countup';
 
@@ -29,6 +30,7 @@ type Projects = {
     tech: string;
     subTitle: string;
     paragraph: string;
+    githubLink: string;
     workHours: number;
     coffee: number;
 }
@@ -105,14 +107,22 @@ export default async function page({ params }: Props) {
                     </div>
 
 
-                    <div className="mt-24">
+                    <div className="lg:mt-32">
                         <div className="flex w-full xl:justify-end">
                             <div className="max-w-xl">
-                                <p>
+                                <p className="mb-10">
                                     {data.paragraph}
                                 </p>
+                                <span className="block text-2xl mb-4">Find this project on:</span>
+                                <SocialIcon
+                                    url={`https://github.com/${data.githubLink}`}
+                                    bgColor="#121212"
+                                    fgColor="#f9f9f9"
+                                />
                             </div>
                         </div>
+
+
 
 
                         <div className="flex w-full justify-end">

@@ -9,9 +9,9 @@ import DesktopHeader from "@/components/DesktopHeader";
 import MobileHeader from "@/components/MobileHeader";
 import AboutBackgroundCircles from "@/components/AboutBackgroundCircles";
 
-import { Typewriter } from 'react-simple-typewriter'
 import { motion } from 'framer-motion'
 import { SocialIcon } from 'react-social-icons'
+import Writer from "@/components/Typewriter";
 
 type About = {
     avatar: any;
@@ -42,13 +42,13 @@ export default async function About() {
                 <div className="absolute bottom-40 left-0 h-96 w-96 -translate-x-2/4 translate-y-2/4 rounded-full  bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#A1FF0A]/25 blur-lg" />
             </div>
 
-            <div className="m-auto w-9/12 md:w-10/12 md:pt-4">
+            <div className="m-auto w-9/12 md:w-10/12 md:pt-4 lg:pt-0">
                 <MobileHeader />
                 <DesktopHeader />
 
-                <div className="pt-20">
-                    <div className="text-6xl font-medium leading-[3rem] text-primary-dark md:text-[6rem] pb-4">
-                        <Typewriter words={['About']} loop={1} typeSpeed={85} />
+                <div>
+                    <div className="mt-16 text-6xl font-medium leading-[3rem] text-primary-dark md:text-[6rem] pb-4">
+                       <Writer title="About"/>
                     </div>
                 </div>
 
