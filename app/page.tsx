@@ -34,7 +34,7 @@ export default async function Home() {
     <>
       {/* backgound circles */}
       <div className="absolute h-screen w-screen overflow-hidden">
-        <div className="absolute top-0 right-0 h-96 w-96 translate-x-1/4 -translate-y-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#580AFF]/40 blur-xl" />
+        <div className="absolute -top-12 right-0 h-96 w-96 translate-x-1/4 -translate-y-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#580AFF]/40 blur-xl" />
       </div>
 
       <div className="absolute h-screen w-screen overflow-hidden">
@@ -64,21 +64,21 @@ export default async function Home() {
           </div>
 
           {/* typewriter */}
-          <div className="pt-20 sm:w-3/4 md:col-span-6 md:pt-5 lg:col-span-2">
+          <div className="pt-12 sm:w-3/4 md:col-span-6 md:pt-5 lg:col-span-2">
             <div className="text-4xl font-medium leading-[3rem] text-primary-dark md:text-[2.5rem]">
               <Typewriter words={[slugSlice]} loop={1} typeSpeed={70} />
             </div>
           </div>
 
           {/* Mobile button */}
-          <div className="absolute top-[61%] left-[12%] sm:block md:hidden">
+          <div className="absolute top-[70%] left-[12%] sm:block md:hidden">
             <Link href="#">
               <Button buttonText="More"/>
             </Link>
           </div>
         </div>
 
-        <div className="absolute right-[10%] bottom-[10%] md:bottom-[5%] lg:bottom-[15%]">
+        <div className="absolute right-[10%] bottom-[5%] lg:bottom-[15%]">
           <SocialIcon
             url="https://github.com/CedricMorreau"
             bgColor="#121212"

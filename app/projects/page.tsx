@@ -51,7 +51,7 @@ export default async function projectOverview() {
                 <Writer title={"Projecten"} />
 
 
-                <div className='w-full mt-16 pb-2 md:grid md:grid-cols-2 md:gap-10 max-w-5xl m-auto'>
+                <div className='w-full mt-6 md:mt-20 pb-2 md:grid md:grid-cols-2 md:gap-10 max-w-5xl m-auto'>
                     {data.map((project: Projects) => {
                         return (<ProjectCard
                             key={project._id}

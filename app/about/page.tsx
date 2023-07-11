@@ -47,13 +47,13 @@ export default async function About() {
                 <DesktopHeader />
 
                 <div>
-                    <div className="mt-16 text-6xl font-medium leading-[3rem] text-primary-dark md:text-[6rem] pb-4">
+                    <div className="mt-16 text-6xl font-medium leading-[3rem] text-primary-dark md:text-[6rem] pb-6 md:pb-0">
                        <Writer title="About"/>
                     </div>
                 </div>
 
-                <div className='relative mt-16'>
-                    <div className='max-w-2xl md:mt-24 lg:max-w-5xl m-auto lg:flex lg:mt-24'>
+                <div className='relative'>
+                    <div className='max-w-2xl md:mt-20 lg:max-w-5xl m-auto lg:flex'>
                         <div className='flex justify-center items-center lg:self-start'>
                             <AboutBackgroundCircles />
                             <Image className='relative rounded-full lg:rounded-xl max-w-[200px] md:max-w-[250px] lg:max-w-[300px]' src={urlForImage(data.avatar).url()} width={500} height={500} alt="placeholder avatar" />
@@ -77,7 +77,7 @@ export default async function About() {
                                         whileInView={{ width: "100%" }}
                                         className="inline pt-3"
                                     >
-                                        <div className='border-b-4' />
+                                        <div className='border-b-[.1rem]' />
                                     </motion.div>
                                 </div>
                             </div>

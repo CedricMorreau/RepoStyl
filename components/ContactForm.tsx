@@ -49,7 +49,7 @@ export default function ContactForm() {
             </div>
 
             <div className="w-full flex flex-col my-8">
-                <textarea rows={4} name="message" placeholder="hoe kan ik helpen?" className="w-full focus:outline-none" minLength={10} maxLength={500} />
+                <textarea rows={4} name="message" placeholder="How can i help?" className="w-full focus:outline-none" minLength={10} maxLength={500} />
             </div>
 
             <button type="submit" disabled={loading} className="rounded-full">

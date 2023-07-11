@@ -86,16 +86,9 @@ export default async function page({ params }: Props) {
                             viewport={{ once: true }}
                             className="inline"
                         >
-                            <div className='border-b-2 pt-4' />
+                            <div className='border-b-[.1rem] pt-4' />
                         </motion.div>
                     </div>
-
-
-                    <motion.div
-                        initial={{ height: 0 }}
-                        transition={{ type: 'spring', delay: 1, duration: 2 }}
-                        whileInView={{ height: "100%" }}
-                    />
 
                     <div className='h-[100] hidden lg:block ml-14 mr-24'>
                         <motion.div

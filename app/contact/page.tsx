@@ -32,7 +32,7 @@ export default function Contact() {
                         <Writer title={"Contact"} />
 
                         <p className="pt-12 pb-6">
-                            Lorem dolor sit amet, consectetur adipiscing elit. Morbi rutrum nisl orci, in scelerisque leo interdum at. Phasellus et facilisis libero. Morbi sodales, diam sed elementum rhoncus, leo augue bibendum arcu, tristique fringilla diam lacus ac enim.
+                            Ready to elevate your online presence? Don't miss out on the opportunity to collaborate. Contact me today to discuss your project. Let's create an impactful digital experience that leaves a lasting impression on your audience.
                         </p>
 
                         <ContactForm />
